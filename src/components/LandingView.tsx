@@ -207,6 +207,7 @@ export default function LandingView({ onLogin }: LandingViewProps) {
           </div>
           <div className="flex items-center space-x-3">
             <button 
+              id="go-to-login"
               onClick={() => {
                 setLoginError('');
                 setAuthMode('login');
@@ -347,6 +348,7 @@ export default function LandingView({ onLogin }: LandingViewProps) {
                 <div className="relative">
                   <Mail className="absolute left-3.5 top-3.5 h-4 w-4 text-slate-400" />
                   <input 
+                    id="email"
                     type="email" 
                     required
                     placeholder="explorer@tournex.com"
@@ -378,6 +380,7 @@ export default function LandingView({ onLogin }: LandingViewProps) {
                 <div className="relative">
                   <Lock className="absolute left-3.5 top-3.5 h-4 w-4 text-slate-400" />
                   <input 
+                    id="password"
                     type={showPassword ? 'text' : 'password'}
                     required
                     placeholder="Enter security passcode"
@@ -417,6 +420,7 @@ export default function LandingView({ onLogin }: LandingViewProps) {
               {/* Button Submission */}
               <div>
                 <button
+                  id="login-button"
                   type="submit"
                   className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-extrabold py-3.5 px-4 rounded-xl text-xs transition shadow-md active:scale-95 cursor-pointer flex items-center justify-center gap-1.5"
                 >
